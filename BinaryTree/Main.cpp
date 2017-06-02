@@ -4,24 +4,12 @@
 
 void main()
 {
-	BinaryTree<int,std::string> binary;
+	BinaryTree<int,double> binary;
 
-	binary.add(5, "elem1");
-	binary.add(1, "elem2");
-	binary.add(3, "elem3");
-	binary.add(16,"elem4");
-	binary.add(6, "elem5");
-	binary.add(9, "elem6");
-	binary.add(24,"elem7");
-	binary.add(5, "elem8");
-	binary.add(4, "elem9");
-	binary.add(2, "elem10");
-	binary.add(10,"elem11");
-
-	binary.remove(100);
-	binary.remove(5);
-	binary.remove(9);
-	binary.remove(300);
+	for (int i = 0; i < 500; i++)
+	{
+		binary.add((rand()%(888+25))-25, (double)(rand()%1000)/((rand()%100)+1));
+	}
 
 	binary.show();
 

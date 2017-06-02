@@ -141,7 +141,7 @@ void BinaryTree<T, VAL>::showNode(NodeTree<T, VAL>* node)
 	 if (node != nullptr)
 	 {
 		 showNode(node->left);
-		 std::cout << node->valdata << " < ";
+		 std::cout << "|"<< node->data <<","<< node->valdata << "| < ";
 		 showNode(node->right);
 	 }
  }
