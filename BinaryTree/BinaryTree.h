@@ -87,6 +87,14 @@ public:
 	void remove(T elem);
 	void show();
 
+	void fill()
+	{
+		for (int i = 0; i < 500; i++)
+		{
+			add((rand() % (888 + 25)) - 25, (double)(rand() % 1000) / ((rand() % 100) + 1));
+		}
+	}
+
 	unsigned char height()
 	{
 		return height(root);

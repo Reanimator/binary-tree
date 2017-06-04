@@ -6,10 +6,7 @@ void main()
 {
 	BinaryTree<int,double> binary;
 
-	for (int i = 0; i < 500; i++)
-	{
-		binary.add((rand()%(888+25))-25, (double)(rand()%1000)/((rand()%100)+1));
-	}
+	binary.fill();
 
 	binary.show();
 
